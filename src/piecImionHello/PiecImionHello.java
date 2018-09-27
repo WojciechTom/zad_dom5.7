@@ -10,11 +10,11 @@ public class PiecImionHello {
         System.out.println("Proszę podać pięć imion");
         String[] imiona = new String[5];
 
-        for (int i = 0; i <= 4; i++) {
+        for (int i = 0; i <= imiona.length-1; i++) {
             imiona[i] = scan.next();
         }
 
-        for (int j = 4; j >= 0; j--) {
+        for (int j = imiona.length-1; j >= 0; j--) {
             System.out.println("Cześć " + imiona[j]);
         }
 
